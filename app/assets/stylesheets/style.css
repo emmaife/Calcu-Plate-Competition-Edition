@@ -1,0 +1,554 @@
+body {
+  background:#efefef;
+  margin:0;
+  padding:0;
+  font-family:Helvetica, Arial, Verdana;
+}
+
+#wrapper {
+  width:960px;
+  margin:0 auto;
+  padding:20px;
+}
+
+h1 {
+  color:#888;
+  margin-left:10px;
+}
+
+div {
+  margin:10px;
+}
+
+
+input {
+  padding:5px;
+  font-size:14px;
+}
+
+
+#container{
+    position: relative;
+
+}
+#bar{
+    width: 100%;
+    height: 100%;
+    src: "barbell2.png";
+}
+
+/*FIRST WEIGHTS
+
+    *//*45 LB */
+
+#r45{
+    position: absolute;
+    bottom: -50px;
+    right: 313px;
+    width: 10px;
+    height: 120px;
+    background: red;
+
+}
+
+#l45{
+    position: absolute;
+    bottom: -50px;
+    left: 325px;
+    width: 10px;
+    height: 120px;
+    background: red;
+
+}
+
+    /*    35 LB  */
+
+#r35{
+    position: absolute;
+    bottom: -40px;
+    right: 313px;
+    width: 10px;
+    height: 100px;
+    background: blue;
+
+}
+
+#l35{
+    position: absolute;
+    bottom: -40px;
+    left: 325px;
+    width: 10px;
+    height: 100px;
+    background: blue;
+
+}
+
+
+#r25{
+    position: absolute;
+    bottom: -30px;
+    right: 313px;
+    width: 10px;
+    height: 80px;
+    background: green;
+
+}
+
+#l25{
+    position: absolute;
+    bottom: -30px;
+    left: 325px;
+    width: 10px;
+    height: 80px;
+    background: green;
+
+}
+
+
+#r10{
+    position: absolute;
+    bottom: -20px;
+    right: 313px;
+    width: 10px;
+    height: 60px;
+    background: yellow;
+
+}
+
+#l10{
+    position: absolute;
+    bottom: -20px;
+    left: 325px;
+    width: 10px;
+    height: 60px;
+    background: yellow;
+
+}
+
+#r5{
+    position: absolute;
+    bottom: -15px;
+    right: 313px;
+    width: 10px;
+    height: 50px;
+    background: orange;
+
+}
+
+#l5{
+    position: absolute;
+    bottom: -15px;
+    left: 325px;
+    width: 10px;
+    height: 50px;
+    background: orange;
+
+}
+
+#r2{
+    position: absolute;
+    bottom: -10px;
+    right: 313px;
+    width: 10px;
+    height: 40px;
+    background: black;
+
+}
+
+#l2{
+    position: absolute;
+    bottom: -10px;
+    left: 325px;
+    width: 10px;
+    height: 40px;
+    background: black;
+
+}
+
+
+
+/*SECOND WEIGHTS*/
+
+    /*45 LB */
+
+#r45b{
+    position: absolute;
+    bottom: -50px;
+    right: 300px;
+    width: 10px;
+    height: 120px;
+    background: red;
+
+}
+
+
+#l45b{
+    position: absolute;
+    bottom: -50px;
+    left: 312px;
+    width: 10px;
+    height: 120px;
+    background: red;
+
+}
+
+        /*35 LB*/
+
+#r35b{
+    position: absolute;
+    bottom: -40px;
+    right: 300px;
+    width: 10px;
+    height: 100px;
+    background: blue;
+
+}
+
+
+#l35b{
+    position: absolute;
+    bottom: -40px;
+    left: 312px;
+    width: 10px;
+    height: 100px;
+    background: blue;
+
+}
+
+
+#r25b{
+    position: absolute;
+    bottom: -30px;
+    right: 300px;
+    width: 10px;
+    height: 80px;
+    background: green;
+
+}
+
+#l25b{
+    position: absolute;
+    bottom: -30px;
+    left: 312px;
+    width: 10px;
+    height: 80px;
+    background: green;
+
+}
+
+
+#r10b{
+    position: absolute;
+    bottom: -20px;
+    right: 300px;
+    width: 10px;
+    height: 60px;
+    background: yellow;
+
+}
+
+#l10b{
+    position: absolute;
+    bottom: -20px;
+    left: 312px;
+    width: 10px;
+    height: 60px;
+    background: yellow;
+
+}
+
+#r5b{
+    position: absolute;
+    bottom: -15px;
+    right: 300px;
+    width: 10px;
+    height: 50px;
+    background: orange;
+
+}
+
+#l5b{
+    position: absolute;
+    bottom: -15px;
+    left: 312px;
+    width: 10px;
+    height: 50px;
+    background: orange;
+
+}
+
+
+#r2b{
+    position: absolute;
+    bottom: -10px;
+    right: 300px;
+    width: 10px;
+    height: 40px;
+    background: black;
+
+}
+
+#l2b{
+    position: absolute;
+    bottom: -10px;
+    left: 312px;
+    width: 10px;
+    height: 40px;
+    background: black;
+
+}
+
+/*THIRD WEIGHTS*/
+
+    /*45 LB */
+
+#r45c{
+    position: absolute;
+    bottom: -50px;
+    right: 288px;
+    width: 10px;
+    height: 120px;
+    background: red;
+
+}
+
+#l45c{
+    position: absolute;
+    bottom: -50px;
+    left: 300px;
+    width: 10px;
+    height: 120px;
+    background: red;
+
+}
+
+
+    /*35 LB*/
+
+#r35c{
+    position: absolute;
+    bottom: -40px;
+    right: 288px;
+    width: 10px;
+    height: 100px;
+    background: blue;
+
+}
+
+
+#l35c{
+    position: absolute;
+    bottom: -40px;
+    left: 300px;
+    width: 10px;
+    height: 100px;
+    background: blue;
+
+}
+
+#r25c{
+    position: absolute;
+    bottom: -30px;
+    right: 288px;
+    width: 10px;
+    height: 80px;
+    background: green;
+
+}
+
+#l25c{
+    position: absolute;
+    bottom: -30px;
+    left: 300px;
+    width: 10px;
+    height: 80px;
+    background: green;
+
+}
+
+#r10c{
+    position: absolute;
+    bottom: -20px;
+    right: 288px;
+    width: 10px;
+    height: 60px;
+    background: yellow;
+
+}
+
+#l10c{
+    position: absolute;
+    bottom: -20px;
+    left: 300px;
+    width: 10px;
+    height: 60px;
+    background: yellow;
+
+}
+
+#r5c{
+    position: absolute;
+    bottom: -15px;
+    right: 288px;
+    width: 10px;
+    height: 50px;
+    background: orange;
+
+}
+
+#l5c{
+    position: absolute;
+    bottom: -15px;
+    left: 300px;
+    width: 10px;
+    height: 50px;
+    background: orange;
+
+}
+
+#r2c{
+    position: absolute;
+    bottom: -10px;
+    right: 288px;
+    width: 10px;
+    height: 40px;
+    background: black;
+
+}
+
+#l2c{
+    position: absolute;
+    bottom: -10px;
+    left: 300px;
+    width: 10px;
+    height: 40px;
+    background: black;
+
+}
+/*FOURTH WEIGHTS*/
+
+    /*45 LB*/
+
+#r45d{
+    position: absolute;
+    bottom: -50px;
+    right: 275px;
+    width: 10px;
+    height: 120px;
+    background: red;
+
+}
+
+#l45d{
+    position: absolute;
+    bottom: -50px;
+    left: 287px;
+    width: 10px;
+    height: 120px;
+    background: red;
+
+}
+
+
+#r35d{
+    position: absolute;
+    bottom: -40px;
+    right: 275px;
+    width: 10px;
+    height: 100px;
+    background: blue;
+
+}
+
+
+#l35d{
+    position: absolute;
+    bottom: -40px;
+    left: 287px;
+    width: 10px;
+    height: 100px;
+    background: blue;
+
+}
+
+#r25d{
+    position: absolute;
+    bottom: -30px;
+    right: 275px;
+    width: 10px;
+    height: 80px;
+    background: green;
+
+}
+
+#l25d{
+    position: absolute;
+    bottom: -30px;
+    left: 287px;
+    width: 10px;
+    height: 80px;
+    background: green;
+
+}
+
+
+#r10d{
+    position: absolute;
+    bottom: -20px;
+    right: 275px;
+    width: 10px;
+    height: 60px;
+    background: yellow;
+
+}
+
+#l10d{
+    position: absolute;
+    bottom: -20px;
+    left: 287px;
+    width: 10px;
+    height: 60px;
+    background: yellow;
+
+}
+
+
+#r5d{
+    position: absolute;
+    bottom: -15px;
+    right: 275px;
+    width: 10px;
+    height: 50px;
+    background: orange;
+
+}
+
+#l5d{
+    position: absolute;
+    bottom: -15px;
+    left: 287px;
+    width: 10px;
+    height: 50px;
+    background: orange;
+
+}
+
+#r2d{
+    position: absolute;
+    bottom: -10px;
+    right: 275px;
+    width: 10px;
+    height: 40px;
+    background: black;
+
+}
+
+#l2d{
+    position: absolute;
+    bottom: -10px;
+    left: 287px;
+    width: 10px;
+    height: 40px;
+    background: black;
+
+}
