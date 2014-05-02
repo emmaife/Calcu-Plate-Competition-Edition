@@ -4,13 +4,13 @@ var total = 0;
 
 $( ".weights" ).click(function() {
 total += parseFloat ($(this).val());
-$( "input" ).val( total * 2 + 45);
+$( "#workout_weight" ).val( total * 2 + 45);
 });
 
 $("#deload").click(function(){
   total = 0
 
-$( "input" ).val("");
+$( "#workout_weight" ).val("");
 
   $("#first").hide();
   $("#firstplates").hide();
@@ -251,7 +251,7 @@ else if ($("#second").is(':visible') == false)
 
 });
 
-$( "input" ).focus(function() {
+$( "#workout_weight" ).focus(function() {
   $('#deload').click();
 });
 
@@ -259,7 +259,7 @@ $("#load").click(function(){
 
 
 
-  var weightVal = (parseFloat (document.getElementById("total").value)) - 45
+  var weightVal = (parseFloat (document.getElementById("workout_weight").value)) - 45
   var plateNum = Math.trunc(weightVal/90)
   var remWeight = (weightVal % 90)/2
 

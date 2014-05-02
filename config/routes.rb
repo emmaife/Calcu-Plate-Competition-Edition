@@ -1,15 +1,17 @@
 Rails.application.routes.draw do
-  get 'logs/index'
+  get 'workouts' => 'workouts#index'
 
-  get 'logs/new'
+  get 'workouts/new'
 
-  get 'logs/create'
+  get 'workouts/create'
 
-  get 'logs/edit'
+  get 'workouts/edit'
 
-  get 'logs/update'
+  get 'workouts/update'
 
-  get 'logs/destroy'
+  get 'workouts/destroy'
+
+  post 'workouts' => 'workouts#create'
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.

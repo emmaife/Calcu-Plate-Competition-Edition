@@ -1,3 +1,3 @@
 class Exercise < ActiveRecord::Base
-  has_many :WOSets
+  has_many :workouts
 end
