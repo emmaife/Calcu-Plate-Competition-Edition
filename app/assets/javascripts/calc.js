@@ -51,6 +51,14 @@ $( "#workout_weight" ).val("");
   $("#fourth10").hide();
   $("#fourth5").hide();
   $("#fourth2").hide();
+
+  $("#fifth").hide();
+  $("#fifthplates").hide();
+  $("#fifth35").hide();
+  $("#fifth25").hide();
+  $("#fifth10").hide();
+  $("#fifth5").hide();
+  $("#fifth2").hide();
 });
 
 $("#deload").click();
@@ -84,6 +92,13 @@ $("#plate").click(function(){
         $("#fourth").show();
 
         $("#fourthplates").show();
+    }
+
+        else if ($("#fifth").is(':visible') == false)
+    {
+        $("#fifth").show();
+
+        $("#fifthplates").show();
     }
 
 });
@@ -120,6 +135,13 @@ $("#threeFive").click(function(){
         $("#fourth35").show();
     }
 
+    else if ($("#fifth").is(':visible') == false)
+      {
+        $("#fifth").show();
+
+        $("#fifth35").show();
+    }
+
 });
 
 $("#quarter").click(function(){
@@ -150,6 +172,13 @@ else if ($("#second").is(':visible') == false)
         $("#fourth").show();
 
         $("#fourth25").show();
+    }
+
+      else if ($("#fifth").is(':visible') == false)
+    {
+        $("#fifth").show();
+
+        $("#fifth25").show();
     }
 
 });
@@ -185,6 +214,13 @@ else if ($("#second").is(':visible') == false)
         $("#fourth10").show();
     }
 
+    else if ($("#fifth").is(':visible') == false)
+    {
+        $("#fifth").show();
+
+        $("#fifth10").show();
+    }
+
 });
 
 
@@ -218,6 +254,12 @@ else if ($("#second").is(':visible') == false)
         $("#fourth5").show();
     }
 
+    else if ($("#fifth").is(':visible') == false)
+    {
+        $("#fifth").show();
+
+        $("#fifth5").show();
+    }
 });
 
 $("#two").click(function(){
@@ -250,6 +292,12 @@ else if ($("#second").is(':visible') == false)
         $("#fourth2").show();
     }
 
+    else if ($("#fifth").is(':visible') == false)
+    {
+        $("#fifth").show();
+
+        $("#fifth2").show();
+    }
 });
 
 $( "#workout_weight" ).focus(function() {
