@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(version: 20140502124853) do
     t.integer  "user_id"
     t.integer  "weight"
     t.integer  "exercise_id"
-    t.datetime "WODate"
+    t.datetime "woDate"
     t.integer  "reps"
   end
 

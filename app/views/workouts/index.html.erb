@@ -1,3 +1,22 @@
-<%@workouts.each do |f|%>
-<%= f.weight%>
+<% if @workouts.empty? %>
+<center><h3>You don't have any logged workouts!</h3> <br/>
+<%= link_to "Start Logging", workouts_new_path %></center>
+<%end%>
+
+<header>
+  <%= link_to "Home", workouts_new_path %></center>
+</header>
+
+<% @workouts.each do |date, wo| %>
+<h3><%= date %></h3>
+
+  <% wo.group_by {|w| w.exercise_id}.each do |exercise, workout|%>
+    <h5><%= Exercise.find(exercise).name %></h5>
+
+    <%workout.each do |f|%>
+      <%= f.reps%> x <%= f.weight%></br></br>
+    <%end%>
+ 
+ <%end%>
+
 <%end%>

@@ -1,5 +1,5 @@
 class AddWorkoutDateToWorkouts < ActiveRecord::Migration
   def change
-    add_column :workouts, :WODate, :datetime
+    add_column :workouts, :woDate, :datetime
   end
 end

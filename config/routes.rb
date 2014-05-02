@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+  root 'workouts#new'
   get 'workouts' => 'workouts#index'
 
   get 'workouts/new'

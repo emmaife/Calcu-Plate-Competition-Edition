@@ -2,6 +2,7 @@ $(document).ready(function(){
 
 var total = 0;
 
+
 $( ".weights" ).click(function() {
 total += parseFloat ($(this).val());
 $( "#workout_weight" ).val( total * 2 + 45);
@@ -260,7 +261,7 @@ $("#load").click(function(){
 
 
   var weightVal = (parseFloat (document.getElementById("workout_weight").value)) - 45
-  var plateNum = Math.trunc(weightVal/90)
+  var plateNum = Math.floor(weightVal/90)
   var remWeight = (weightVal % 90)/2
 
 
@@ -269,9 +270,7 @@ $("#load").click(function(){
   while (i < plateNum)
   {
 
-     $('#plate').click();
-
-      
+    $('#plate').click();
 
     i++
 

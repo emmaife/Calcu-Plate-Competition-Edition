@@ -11,8 +11,15 @@
 </head>
 
 
+
 <body>
+
+
     
+  <% if user_signed_in?%>
+   <%= link_to 'Your Logs', workouts_path%>
+    <%end%>
+
   <div id="wrapper">
     
     <center><h1>Plate Calculator</h1>
