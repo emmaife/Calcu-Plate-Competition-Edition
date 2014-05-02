@@ -8,6 +8,7 @@
 </header>
 
 <% @workouts.each do |date, wo| %>
+
 <h3><%= date %></h3>
 
   <% wo.group_by {|w| w.exercise_id}.each do |exercise, workout|%>
