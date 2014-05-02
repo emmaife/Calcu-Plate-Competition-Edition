@@ -9,15 +9,17 @@
 
 </head>
 
-
+<header>
+    <% if user_signed_in?%>
+   <%= link_to 'Your Logs', workouts_path%>
+    <%end%>
+  </header>
 
 <body>
 
 
     
-  <% if user_signed_in?%>
-   <%= link_to 'Your Logs', workouts_path%>
-    <%end%>
+
 
   <div id="wrapper">
     

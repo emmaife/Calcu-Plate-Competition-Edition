@@ -1,11 +1,13 @@
-<% if @workouts.empty? %>
-<center><h3>You don't have any logged workouts!</h3> <br/>
-<%= link_to "Start Logging", workouts_new_path %></center>
-<%end%>
+
 
 <header>
   <%= link_to "Home", workouts_new_path %></center>
 </header>
+<body>
+<% if @workouts.empty? %>
+<center><h3>You don't have any logged workouts!</h3> <br/>
+<%= link_to "Start Logging", workouts_new_path %></center>
+<%end%>
 
 <% @workouts.each do |date, wo| %>
 
@@ -21,5 +23,5 @@
  <%end%>
 
 <%end%>
-
+</body>
 

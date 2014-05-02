@@ -11,10 +11,12 @@
 </head>
 <header>
     <% if user_signed_in? %>
-<div align = "right">
+
   <%= link_to 'Sign Out', destroy_user_session_path, html_options = {method: :delete}%>
-</div>
+
   <%end%>
+  <br/>
+  <br/>
 </header>
 <body>
 
