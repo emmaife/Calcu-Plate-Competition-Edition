@@ -34,7 +34,8 @@
 <%= f.date_select :woDate %> 
 
 <br/>
-      <button id = "log">Log</button>
+<br/>
+      <button id = "log" class="btn btn-success">Log</button>
 
 <%else%>
 <%= link_to 'Log In To Log It!', new_user_session_path %> or <%= link_to 'Sign Up', new_user_registration_path%>

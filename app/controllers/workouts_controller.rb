@@ -3,7 +3,7 @@ class WorkoutsController < ApplicationController
   
   def index
     @user= current_user
-    @workouts = @user.workouts.group_by {|w| w.woDate.strftime("%m/%d/%Y")}
+    @workouts = @user.workouts.reverse.group_by {|w| w.woDate.strftime("%m/%d/%Y")}
   end
 
   def new

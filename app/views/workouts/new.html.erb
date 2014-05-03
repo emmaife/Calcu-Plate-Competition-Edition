@@ -20,16 +20,7 @@
 
 </head>
 
-<header>
-    <% if user_signed_in?%>
-   <%= link_to 'Your Logs', workouts_path%>
-    <%end%>
-  </header>
-
 <body>
-
-
-    
 
 
   <div id="wrapper">
@@ -215,11 +206,11 @@
 
 </div>
 
-  
+  <br/>
 
-      <button id = "load">Load</button>
-      <button id = "deload">Deload</button>
-<br/>
+      <button type = "button" id = "load" class="btn btn-primary">Load</button>
+      <button type = "button" id = "deload" class="btn btn-danger">Deload</button>
+<br/><br/>
 <br/>
 <%= render 'form' %>
 

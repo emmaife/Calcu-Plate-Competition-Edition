@@ -13,30 +13,40 @@
 </script>
 </head>
 
-<header>
-  <%= link_to "Home", workouts_new_path %></center>
-</header>
+
 <body>
 <% if @workouts.empty? %>
 <center><h3>You don't have any logged workouts!</h3> <br/>
 <%= link_to "Start Logging", workouts_new_path %></center>
 <%end%>
 
-<% @workouts.each do |date, wo| %>
+
 <center>
-<h3><%= date %></h3>
+<p>Click a date to view your log for that day</p>
 
-  <% wo.group_by {|w| w.exercise_id}.each do |exercise, workout|%>
-    <h5><%= Exercise.find(exercise).name %></h5>
+<% @workouts.each do |date, wo| %>
+<button type="button" class="btn btn-danger btn-lg" data-toggle="collapse" data-target="#a<%=date.gsub(/\W/,'')%>">
+<%= date %></button> <br/><br/>
 
-    <%workout.each do |f|%>
-      <%= f.reps%> x <%= f.weight%></br></br>
+<div id="a<%=date.gsub(/\W/,'')%>" class="collapse">
+ <% wo.group_by {|w| w.exercise_id}.each do |exercise, workout|%>
+        <h3><%= Exercise.find(exercise).name %></h3>
+
+        <%workout.each do |f|%>
+      <p>  <%= f.reps%> x <%= f.weight%></p>
+    </br></br>
     <%end%>
-    
- <%end%>
+    <%end%>
+</div>
 
-<%end%>
+
+ <%end%>
+    
+
 </center>
+
+
+
 </body>
 
 </html>

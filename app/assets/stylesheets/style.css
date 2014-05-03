@@ -1,8 +1,8 @@
 body {
   background:#efefef;
   margin:0;
-  padding:0;
   font-family:Helvetica, Arial, Verdana;
+    padding-top: 70px;
 }
 
 #wrapper {
@@ -11,10 +11,30 @@ body {
   padding:20px;
 }
 
-h1 {
-  color:#888;
-  margin-left:10px;
+.navbar-brand {
+font-family: 'Black Ops One', cursive;
+  color:#000;
+
 }
+body h1 {
+  color:#000;
+font-family: 'Black Ops One', cursive;
+}
+body h3 {
+  color:#000;
+font-family: 'Black Ops One', cursive;
+}
+
+body h4 {
+  margin-left:10px;
+  font-family: font-family: 'Play', sans-serif;
+}
+
+body p {
+    font-family: 'Play', sans-serif;
+    font-weight: 400;
+}
+
 
 div {
   margin:10px;
@@ -26,6 +46,11 @@ input {
   font-size:14px;
 }
 
+.weights {
+padding: 0;
+border: none;
+background: none;
+}
 
 #container{
     position: relative;
@@ -151,7 +176,7 @@ input {
     right: 313px;
     width: 10px;
     height: 40px;
-    background: black;
+    background: #777;
 
 }
 
@@ -161,7 +186,7 @@ input {
     left: 325px;
     width: 10px;
     height: 40px;
-    background: black;
+    background: #777;
 
 }
 
@@ -284,7 +309,7 @@ input {
     right: 300px;
     width: 10px;
     height: 40px;
-    background: black;
+    background: #777;
 
 }
 
@@ -294,7 +319,7 @@ input {
     left: 312px;
     width: 10px;
     height: 40px;
-    background: black;
+    background: #777;
 
 }
 
@@ -412,7 +437,7 @@ input {
     right: 288px;
     width: 10px;
     height: 40px;
-    background: black;
+    background: #777;
 
 }
 
@@ -422,7 +447,7 @@ input {
     left: 300px;
     width: 10px;
     height: 40px;
-    background: black;
+    background: #777;
 
 }
 /*FOURTH WEIGHTS*/
@@ -539,7 +564,7 @@ input {
     right: 275px;
     width: 10px;
     height: 40px;
-    background: black;
+    background: #777;
 
 }
 
@@ -549,7 +574,7 @@ input {
     left: 287px;
     width: 10px;
     height: 40px;
-    background: black;
+    background: #777;
 
 }
 
@@ -668,7 +693,7 @@ input {
     right: 263px;
     width: 10px;
     height: 40px;
-    background: black;
+    background: #777;
 
 }
 
@@ -678,6 +703,6 @@ input {
     left: 275px;
     width: 10px;
     height: 40px;
-    background: black;
+    background: #777;
 
 }
