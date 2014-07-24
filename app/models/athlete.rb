@@ -7,7 +7,24 @@ class Athlete < ActiveRecord::Base
   belongs_to :age_division
   belongs_to :equipment_division
 
-  
+
+  def squat_max
+    @athlete.attempts.find_all {|x|  x.lift.name == "Squat"}.max_by {|s| s.weight}.weight
+  end
+
+  def deadlift_max
+    @athlete.attempts.find_all {|x|  x.lift.name == "Deadlift"}.max_by {|s| s.weight}.weight
+  end
+
+  def bench_max
+    @athlete.attempts.find_all {|x|  x.lift.name == "Bench Press"}.max_by {|s| s.weight}.weight
+  end
+
+  def total
+    @total = squat_max + deadlift_max + bench_max
+  end
+
+
 end
 
-# @athlete.attempts.select {|a| a.lift.name = "Squat"}.max
+
